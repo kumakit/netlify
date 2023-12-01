@@ -1,0 +1,14 @@
+site_name: kuma DATA
+
+theme:
+  name: material
+  language: 'ja'
+  font: 
+    text: IBM+Plex+Sans+JP
+  palette:
+    scheme: slate
+    primary: black
+    accent: light green
+  extra:
+    search:
+      language: 'jp'
