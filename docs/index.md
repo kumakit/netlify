@@ -5,6 +5,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 統計検定　データサイエンス発展
 
 [Streamlit page](https://kumadata.streamlit.app)
+[Github Pages](https://kumatkit.github.io)
 
 ## Commands
 
