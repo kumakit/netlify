@@ -1,5 +1,9 @@
 site_name: kuma DATA
 
+nav:
+    - 'index.md'
+    - 'ds_dev.md'
+
 theme:
   name: material
   language: 'ja'
@@ -12,3 +16,9 @@ theme:
   extra:
     search:
       language: 'jp'
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      ##clickable_checkbox: true
+  - def_list
