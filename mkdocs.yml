@@ -24,8 +24,8 @@ markdown_extensions:
   - def_list
   - pymdownx.arithmatex:
       generic: true
-    - attr_list
-    - md_in_html
+  - attr_list
+  - md_in_html
 
 extra_javascript:
   - javascripts/katex.js 

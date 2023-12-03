@@ -22,7 +22,7 @@
 $f(x)=2^x$のような形で関数の入力が別の数字の肩に乗る関数のこと  
 この関数の２は底と呼ぶ  
 ※$f(x)=0$　⇒　関数の値は１になる  
-シグモイド関数
+シグモイド関数  
 ![Image title](https://kumadata.streamlit.app/~/+/media/1cc4c976f05a12f28ce835ac6b2f14212d548b757bc264abac5ed835.png){ width="300" }  
 - [ ] 対数関数
 - [ ] 三角関数
