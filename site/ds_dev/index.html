@@ -951,11 +951,24 @@ $$</li>
 <dd>データ分析に必要な初等関数や 微分積分の意味と操作を理解する。  </dd>
 </dl>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 指数関数<br />
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 指数関数  </li>
+</ul>
+<p>指数：非常に大きな数や小さなを扱うのに便利な考え方<br />
+例：地球の直径　<span class="arithmatex">\(12700000m = 1.27^{7}m\)</span><br />
+　　太陽の直径　<span class="arithmatex">\(13920000000m = 1.39^{10}m\)</span><br />
+　　原子の直径　<span class="arithmatex">\(0.0000000001m = 10^{-10}m\)</span><br />
+指数法則：<br />
+①<span class="arithmatex">\(a^m \times a^n = a^{m+n}\)</span><br />
+②<span class="arithmatex">\((a^m)^n = a^mn\)</span><br />
+③<span class="arithmatex">\((ab)^n = a^{n}b^n\)</span><br />
+指数の拡張：<br />
+<span class="arithmatex">\(a^0 = 1\)</span><br />
+<span class="arithmatex">\(a^{-1} = \frac{1}{a^n}\)</span></p>
+<p>指数関数：
 <span class="arithmatex">\(f(x)=2^x\)</span>のような形で関数の入力が別の数字の肩に乗る関数のこと<br />
 この関数の２は底と呼ぶ<br />
-※<span class="arithmatex">\(f(x)=0\)</span>　⇒　関数の値は１になる  </li>
-</ul>
+※<span class="arithmatex">\(f(x)=0\)</span>　⇒　関数の値は１になる<br />
+指数関数の値は急激に増加する特徴がある。例：感染者の増加、紙を42回折ると月に到達する、など  </p>
 <p>指数関数  <span class="arithmatex">\(f(x)=e^x\)</span><br />
 底が1より大きな数であればグラフの形はほとんど同じ、特に<span class="arithmatex">\(x=0\)</span>の時は、底の値にかかわらず、関数の値は1になります。xが大きくなると、関数の値は急激に増大し、小さくなると限りなく0に近づきます。</p>
 <p><img alt="Image title" src="https://kumadata.streamlit.app/~/+/media/c12043cf6810c40d7d5bb400fe1f3815d3e0aeef4ab491c7ab4c8efa.png" width="500" />  </p>
@@ -1037,7 +1050,8 @@ $$</li>
 <p>ネイピア数（自然対数の底）
 e  =　2.71828182845904523536……　　 無理数、超越数と呼ばれているものである。</p>
 <p>$$
-e = \sum_{n=0}^{\infty}  \frac{1}{n!}
+e = \sum_{n=0}^{\infty}  \frac{1}{n!}　　
+e = \lim_{n\to \infty} \bigg(1 +  \frac{1}{n} \bigg) ^n
 $$
 <span class="arithmatex">\(n!\)</span> はnの階乗（1からnまでの整数をすべて掛け算した数、例：<span class="arithmatex">\(3!=3\times2\times1=6\)</span> ）で
 <span class="arithmatex">\(0!=1\)</span> となることは決まっている。
@@ -1045,6 +1059,25 @@ $$
 難しいので、e=2.718くらい、微分してもeはeのままということだけ覚えておこう！</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 対数関数</li>
+</ul>
+<p>対数：
+人間の間隔は対数的、とても幅が広い範囲を人間の感覚的に表すときに使う。<br />
+例：地震の大きさ　M（マグニチュード） <span class="arithmatex">\(log_{10}E=4.8+1.5M\)</span>マグニチュードが１違うと32倍違う。</p>
+<p><span class="arithmatex">\(log_{2}8 = 3\)</span>　2を底、8を真数という<br />
+2を3乗すると真数の8になるか、答えは３となる。<br />
+対数法則：<br />
+①<span class="arithmatex">\(log_{a}MN = log_{a}M + log_{a}N\)</span><br />
+②<span class="arithmatex">\(log \frac{M}{N} = log_a{M} - log_a{N}\)</span><br />
+③<span class="arithmatex">\(log_{a}{M}^p = {p}log_{a}{M}\)</span></p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">math</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span> <span class="c1">#numpyの場合</span>
+</span></code></pre></div>
+<p>自然対数：底がネイピア数の対数関数　<span class="arithmatex">\(f(x)=log_ex=lnx\)</span><br />
+常用対数：底が10の対数関数　<span class="arithmatex">\(f(x)=log_{10}x\)</span></p>
+<ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 三角関数</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 偏微分、接平面、重積分、累次積分 </li>
@@ -1063,17 +1096,17 @@ $$
 $$
 k=1からnまでの整数をすべて足すという意味
 k=10の場合</p>
-<p><div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">sigma</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">n</span><span class="o">=</span><span class="mi">10</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>    <span class="n">sigma</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">sigma</span><span class="p">))</span>
+<p><div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">sigma</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">n</span><span class="o">=</span><span class="mi">10</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="n">sigma</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">sigma</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 = 55</p>
 <ul class="task-list">
@@ -1091,6 +1124,13 @@ k=10の場合</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 予備</li>
 </ul>
+<details>
+<summary>xxx</summary>
+
+aaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccc
+</details>
 
 
 
