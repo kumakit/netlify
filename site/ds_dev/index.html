@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -63,7 +63,6 @@
     
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-green">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -115,6 +114,7 @@
     </div>
     
       
+    
     
     
     
@@ -1580,11 +1580,37 @@ $$
 \end{pmatrix}
 $$</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 空間ベクトル</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> n 次元ベクトル</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ベクトルの和</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 内積</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 直交性</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ノルム</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> n 次元ベクトル<br />
+$
+x =
+\begin{pmatrix}
+ x_1\\
+ x_2\\
+ ...\\
+ x_n
+\end{pmatrix}
+$
+のようにn個の成分からなるベクトル</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ベクトルの和<br />
+要素同士の数の足し算、同じ次元数のベクトルの間のみで計算できる
+$$(x,y)=
+\begin{pmatrix}
+ x_1+y_1\\
+ x_2+y_2\\
+ ...\\
+ x_n+y_n
+\end{pmatrix}
+$$</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 内積
+２つのn次元ベクトルxとyに対して、
+<span class="arithmatex">\((x,y)=x_1y_1+x_2y_2+・・・+x_ny_n\)</span>で定まるスカラーをx,yの内積と呼ぶ  </li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 直交性<br />
+２つのn次元ベクトルx,yの内積(x,y)が0であるとき、xとyは直行するという</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ノルム</p>
+</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 正方行列</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 単位行列</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 転置行列</li>
@@ -1732,11 +1758,22 @@ $$
 </span></code></pre></div>
 <p>自然対数：底がネイピア数の対数関数　<span class="arithmatex">\(f(x)=log_ex=lnx\)</span><br />
 常用対数：底が10の対数関数　<span class="arithmatex">\(f(x)=log_{10}x\)</span></p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 三角関数</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 偏微分、接平面、重積分、累次積分 </li>
+<ul>
+<li>
+<dl>
+<dt>[ ] 三角関数</dt>
+<dd>ベクトルの内積、Sin波、<br />
+三角比<br />
+<span class="arithmatex">\(\sin\)</span>　サイン　正弦<br />
+<span class="arithmatex">\(\cos\)</span>　コサイン　余弦<br />
+<span class="arithmatex">\(\tan\)</span>　タンジェント　正接  </dd>
+</dl>
+</li>
 </ul>
+<p>\theta$</p>
+<p>三平方の定理　
+- [ ] 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係
+- [ ] 偏微分、接平面、重積分、累次積分 </p>
 <h3 id="_7">数列</h3>
 <dl>
 <dd>数列の基本的な事項を理解する。</dd>
@@ -1993,11 +2030,19 @@ ccccccccccccccccccccc
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -2029,7 +2074,7 @@ ccccccccccccccccccccc
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       
