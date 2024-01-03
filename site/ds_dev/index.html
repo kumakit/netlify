@@ -1625,15 +1625,56 @@ $$</li>
 <span class="arithmatex">\(||x||=|x_1|+|x_2|+...|x_n|\)</span><br />
 xを位置ベクトルと考えると、原点からベクトルの終点までの直線距離であり、ユークリッド距離と同じこととなる。</p>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 正方行列</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 単位行列</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 転置行列</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 対称行列</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 行列の積</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 逆行列</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 行列式</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 線形独立</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 部分空間</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 正方行列<br />
+行と列のサイズが同じ行列。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 単位行列<br />
+正方行列のうち、左上から右下への対角線上にのる成分（対角成分）がすべて１で、残りの要素が０の行列。
+$$
+I_n=\begin{pmatrix}
+ 1 &amp; 0 &amp; ... &amp; 0\\
+ 0 &amp; 1 &amp; ... &amp; 0\\
+ . &amp; . &amp; ... &amp; .\\
+ 0 &amp; 0 &amp; ... &amp; 1
+\end{pmatrix}
+$$</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 転置行列<br />
+行列の行と列を入れ替える操作を転置と呼ぶ。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 対称行列
+転置行列と元の行列が一致する行列
+$$
+\begin{pmatrix}
+1 &amp; 3\\
+3 &amp; 1
+\end{pmatrix}
+$$</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 行列の積<br />
+<span class="arithmatex">\(m \times s\)</span>の行列に<span class="arithmatex">\(s \times n\)</span>の行列を掛けると<span class="arithmatex">\(m \times n\)</span>の行列になる。
+$$
+\begin{pmatrix}
+1 &amp; 2\\
+3 &amp; 4
+\end{pmatrix}
+\begin{pmatrix}
+5 &amp; 7\\
+6 &amp; 8
+\end{pmatrix}=
+\begin{pmatrix}
+1 \times 5 + 2 \times 6 &amp; 1 \times 7 + 2 \times 8\\
+3 \times 5 + 4 \times 6 &amp; 3 \times 7 + 4 \times 8
+\end{pmatrix}=
+\begin{pmatrix}
+17 &amp; 23\\
+39 &amp; 53
+\end{pmatrix}
+$$</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 逆行列<br />
+行列における逆数（例えば２の逆数は<span class="arithmatex">\(\frac{1}{2}\)</span>）のようなもの。行列<span class="arithmatex">\(A\)</span>の逆行列は<span class="arithmatex">\(A^-1\)</span>という記号で表す。逆数は元の数字と掛け合わせると１になるが、逆行列は元の行列とかけ合わせると単位行列になる。<span class="arithmatex">\(A\)</span>の行列が存在するとき、<span class="arithmatex">\(A\)</span>は正則であるという。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 行列式<br />
+正方行列に対して定義される量（スカラー）。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 線形独立<br />
+一次独立とも言う。いくつかのベクトルがあり、そのどれをとっても平行（定数倍）なものがないこと。線形独立でないものは線形従属であると言う。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 部分空間<br />
+ベクトル空間の空でない部分集合で、かつ、ベクトル空間であるものを部分空間という。</li>
 </ul>
 <h3 id="_6">微分積分</h3>
 <dl>
@@ -1772,22 +1813,27 @@ $$
 </span></code></pre></div>
 <p>自然対数：底がネイピア数の対数関数　<span class="arithmatex">\(f(x)=log_ex=lnx\)</span><br />
 常用対数：底が10の対数関数　<span class="arithmatex">\(f(x)=log_{10}x\)</span></p>
-<ul>
-<li>
-<dl>
-<dt>[ ] 三角関数</dt>
-<dd>ベクトルの内積、Sin波、<br />
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 三角関数<br />
+ベクトルの内積の定義
+$$
+\overrightarrow{a}・\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|cos\theta
+$$
+正弦波（Sin波）基本的な波形の一つ<br />
+<span class="arithmatex">\(f(x)=sin(x)\)</span>　<span class="arithmatex">\(f(x)=cos(x)\)</span><br />
 三角比<br />
 <span class="arithmatex">\(\sin\)</span>　サイン　正弦<br />
 <span class="arithmatex">\(\cos\)</span>　コサイン　余弦<br />
-<span class="arithmatex">\(\tan\)</span>　タンジェント　正接  </dd>
-</dl>
-</li>
+<span class="arithmatex">\(\tan\)</span>　タンジェント　正接  </li>
 </ul>
-<p>\theta$</p>
-<p>三平方の定理　
-- [ ] 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係
-- [ ] 偏微分、接平面、重積分、累次積分 </p>
+<p>傾きを表現する関数がtan、sinとcosを使って次のように定義する。<br />
+<span class="arithmatex">\(tan\theta=\frac{sin\theta}{cos\theta}\)</span></p>
+<p>三平方の定理　直角三角形の３辺の長さ（ピタゴラスの定理）　
+<span class="arithmatex">\(a^2+b^2=c^2\)</span></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 偏微分、接平面、重積分、累次積分 </li>
+</ul>
 <h3 id="_7">数列</h3>
 <dl>
 <dd>数列の基本的な事項を理解する。</dd>
