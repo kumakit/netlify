@@ -1831,8 +1831,56 @@ $$
 <p>三平方の定理　直角三角形の３辺の長さ（ピタゴラスの定理）　
 <span class="arithmatex">\(a^2+b^2=c^2\)</span></p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積の微分、合成関数の微分、関数の最大最小、線形近似、原始関数、積分と微分の関係</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 偏微分、接平面、重積分、累次積分 </li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積の微分<br />
+(前の微分)×(後ろそのまま)+(前そのまま)×(後ろ微分) <br />
+公式<span class="arithmatex">\((f(x)g(x))'=f'(x)g(x)+f(x)g'(x)\)</span><br />
+<span class="arithmatex">\(y=(2x+1)^2\)</span>の微分は<span class="arithmatex">\(y'=2 \times (2x+1)+(2x+1)\times 2\)</span>となる</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 合成関数の微分<br />
+合成関数：関数<span class="arithmatex">\(f\)</span>が<span class="arithmatex">\(x\)</span>を<span class="arithmatex">\(y\)</span>に対応させて、関数<span class="arithmatex">\(g\)</span>が<span class="arithmatex">\(y\)</span>を<span class="arithmatex">\(z\)</span>に対応されるとき、<span class="arithmatex">\(x\)</span>を<span class="arithmatex">\(z\)</span>に対応させる関数を<span class="arithmatex">\(f\)</span>と<span class="arithmatex">\(g\)</span>の合成関数と呼び、<span class="arithmatex">\(g(f(x))\)</span>と書く。<br />
+例<span class="arithmatex">\(f(x)=x^2+1,g(x)=x^2\)</span>であるとき、<span class="arithmatex">\(g(f(x))=g(x^2+1)=(x^2+1)^2\)</span><br />
+合成関数の微分：箱の微分に中身を代入したものX中身の微分<br />
+公式<span class="arithmatex">\((g(f(x)))'=f'(x)g'(f(x))\)</span><br />
+例：<span class="arithmatex">\(f(x)=x^2+1,g(x)=x^2\)</span>のときに<span class="arithmatex">\(g(f(x))=(x^2+1)^2\)</span>の微分<br />
+箱の微分に中身を代入したもの<span class="arithmatex">\(g'(x)=2x\)</span>に<span class="arithmatex">\(f'(x)=x^2+1\)</span>を代入したもの→<span class="arithmatex">\(2(x^2+1)\)</span>
+中身の微分は<span class="arithmatex">\(f'(x)=2x\)</span>のことを指し、
+<span class="arithmatex">\(2(x^2+1) \times 2x=4x(x^2+1)\)</span>が答えとなる。</p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 関数の最大最小<br />
+関数の接戦の傾きを微分で求め、傾きが０であることで関数の最小値（もしくは最大値）となる点を求めることができる。機械学習で損失関数がもっとも小さくなるパラメータを求めるときに微分により傾き０を利用する。<br />
+$$
+傾き：a= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}
+$$</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 線形近似<br />
+一般の関数を数学的に扱いやすい一次関数に置き換えて近似すること</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 原始関数
+微分するとf(x) になるような関数 F(x) をf(x) の原始関数と言う。（つまり微分する前の関数のこと、微分したあとの関数は導関数という）<br />
+例：<span class="arithmatex">\(x^3\)</span>を微分すると<span class="arithmatex">\(3x^2\)</span>なので<span class="arithmatex">\(F(x)=x^3\)</span>は<span class="arithmatex">\(f(x)=3x^2\)</span>の原始関数の一つ。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 積分と微分の関係
+積分と微分は逆演算の関係
+積分：瞬間の小さな変化を積み上げて全体量を求める計算
+微分：全体量を極限まで細かく分割して「値の変化量（傾き）」を求める計算。
+x^3を微分。　<span class="arithmatex">\((x^3)'=3x^2\)</span><br />
+3x^2を積分　<span class="arithmatex">\(\int3x^2dx=3 \times \frac {1}{2+1}x^3+C=x^3+C\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 偏微分<br />
+複数の変数がある関数（多変数変数）を微分するときに、１つの変数にだけ注目し、それいがは定数として扱うこと<br />
+例　<span class="arithmatex">\(f(x)=x^2+xy\)</span>を<br />
+<span class="arithmatex">\(x\)</span>に関する偏微分　<span class="arithmatex">\(fx=2x+y\)</span><br />
+<span class="arithmatex">\(y\)</span>に関する偏微分　<span class="arithmatex">\(fy=x\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 接平面
+局面上の一点、この局面に引いた接線をすべて含む平面のこと。
+偏微分を用いて法線ベクトルを求めることによって計算する</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 重積分<br />
+多変数の関数の多変数の範囲にわたる積分のこと<br />
+そもそも積分とは　微分で求めた予測値がどのくらいの確率で当たるのかを求めるのが微分。Xの値を定数でやるのが定積分、ｘの値を変数でやるのが不定積分。積分を使うと、aの値が決まったときにbの値が定まる範囲=面積が求められる。</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 累次積分<br />
+繰り返し積分を行うこと、逐次積分ともいう。</p>
+</li>
 </ul>
 <h3 id="_7">数列</h3>
 <dl>
