@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -63,7 +63,6 @@
     
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-green">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -115,6 +114,7 @@
     </div>
     
       
+    
     
     
     
@@ -1577,7 +1577,25 @@ IoTですべての人とモノがつながり、さまざまな知識や情報�
 </dl>
 <p>・データ解析</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 予測、グルーピング、パターン発見、最適化、シミュレーション・データ同化
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 予測<br />
+<strong>天気予報</strong>：地球規模で過去数十年分の天気変化のデータや、最近１週間分のデータを用いて、明日以降の大気状態を推定する。予測精度は極めて高い。<br />
+<strong>株価の予測</strong>：膨大な過去のデータを使って、値段が上がると予測される株を買って、一番上ったと予測すされるときに売る。<br />
+<strong>予測の方法</strong>：①これまでのデータから何らかの法則を見出して、その法則が今後も続くと仮定して、未来を予測する方法。例えば過去10年の給料の増加から今後も増え方は一定と予測し、直線を法則として5年後を予測する。②似たデータを用いる方法。例えば、さまざまな人々の給料の変化をデータとして蓄積しておき、その中から似た人を探し、その人の給料変化データを用いて、未来を予測する。<br />
+<strong>予測の難しさ</strong>：給料で一定の増加を法則として予測しても、予測後に景気変動が起これば、この法則は成り立たなくなる。またそもそも似た人のデータがあるのかといった問題や、似ていても未来が同じという保証はない。さらにサイコロの目のようにそもそも予測不可能な問題もある。このような理由により、最新の理論や予測は依然として困難だが、未来の範囲を予測する、短期予測とする等困難な未来予測を用意にする方法もある。<br />
+<strong>未来を予測するー補完</strong>：折れ線グラフなどのように、データの欠損部分に予測値を与える。この「間を予測する技術」は補完と呼ばれる。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> グルーピング<br />
+<strong>グループがあらかじめ決まっている場合</strong>：アンケートを取り、グループの割合を把握したり、人口を年代別に把握するなど、全体の傾向を用意に把握できる。階層的グルーピングが便利な場合もある。麺類（ラーメン、、、）、肉類（焼肉、、）、魚類（刺し身、、）<br />
+<strong>グループがあらかじめ決まっていない場合ークラスタリング</strong>：データの類似度を用いて、似ているデータを同じグループに属させる考え方で、グループ自体を自動的に決めながら、事物それぞれをグループに分けていくことを、クラスタリングと呼ぶ。クラスターとはぶどうの房のような塊を意味する。ビッグデータを扱う場合、それらがどういう性質を持っているのか、すべてを見ていくことは難しい。しかし、クラスタリングを行って、各グループの代表例だけを観察すれば、それら全データがおよそどのような種類で構成されているかを把握できる。クラスタリングには「絶対的な正解」が存在しないことが多いため、分析者が試行錯誤しつつ、指標などを調整する必要がある。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> パターン発見<br />
+<strong>相関分析</strong>：2種類のデータ間の関係の強弱。正の相関、負の相関、無相関がある。また、相関係数によって相関の強弱を測ることができる。最も強い正の相関は１，最も強い負の相関は－１、無相関は０の値をとる。
+<strong>疑似相関</strong>：直接的な相関がないにも関わらず、背後に共通した要因があるため、相関があるように見えてしまうこと。擬似相関は悪用されるケースもあるので、注意すべきである。<br />
+<strong>相関と因果関係</strong>：相関があっても、そこからただちに因果関係があると結論づけるのは危険である。因果関係を正しく把握するためには、因果推論という手法をつかう必要がある。<br />
+<strong>頻出パターン発見</strong>：よく見かけるパターン（データの組）を見つける方法。バスケット分析により、よく同時に購入される商品の組み合わせを発見し、購入の推薦をするなど。アンケート結果の解析にも利用できる。頻出パターン発見は、３つ以上の組み合わせが頻出し、データが大規模になると組合せ爆発により、全部の組み合わせをすべてチェックすることが計算機を用いても不可能となる。このため、工夫したアルゴリズムを用いて、効率的に各組み合わせの出現回数を求める必要がある。</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 最適化<br />
+データ解析や機械学習と密接する数学の一分野で、特に意思決定や選択のときに登場する。制御変数（例：選ぶ料理）、目的変数（例：料理中の野菜）、制約条件（例：メニュー内、昨日と違うもの、５００円以内）の三要素からなる。クラスタリングでは、制御変数：各データをそれぞれどのグループに入れるか、目的変数：各グループに属する出たの似ている程度、制約条件：グループは２つという最適化の問題になる。予測や頻出パターン、パターン認識なども、最適化問題になる。  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> シミュレーション・データ同化<br />
+<strong>シミュレーション</strong>：「模倣」もしくは「模擬」、過去になり大雨、地震被害やウイルスの拡散等実際に起こらない状況や起こせない状況に似たよううな状況を作り出し、観察する。大地震や心臓の一部破壊等のように実データを集めることが不可能もしくは困難な場合にはシミュレーションで生成したデータはデータ解析に役立ち貴重である。またある理論により作られたシミュレーションの結果が実際のデータとどの程度合致しているかを検証することで、間接的にろの理論の妥当性を示すことができる。<br />
+<strong>データ同化</strong>：シミュレーションと実データのズレを補正することで、シミュレーションの精度を改善する方法。実際の現象から得られた実データやその解析結果を利用することで、より高精度なシミュレーションを実現できる。<br />
 ・データ可視化</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 複合グラフ、2軸グラフ、多次元の可視化、関係性の可視化、地図上の可視化、挙動・軌跡の</li>
 </ul>
@@ -2194,11 +2212,19 @@ ccccccccccccccccccccc
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -2230,7 +2256,7 @@ ccccccccccccccccccccc
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       
