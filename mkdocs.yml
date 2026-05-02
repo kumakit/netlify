@@ -3,6 +3,7 @@ site_name: kuma DATA
 nav:
     - 'index.md'
     - 'ds_dev.md'
+    - 'statistics_l2.md'
 
 theme:
   name: material
