@@ -12,9 +12,14 @@
         <link rel="prev" href="..">
       
       
+        <link rel="next" href="../statistics_l2/">
+      
+      
+        
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -22,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -46,11 +51,10 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -89,12 +93,12 @@
     <a href=".." title="kuma DATA" class="md-header__button md-logo" aria-label="kuma DATA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              統計検定 DS発展　勉強メモ
+              統計検定 DS発展 勉強メモ
             
           </span>
         </div>
@@ -118,32 +122,34 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="検索">
         
         <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             検索を初期化
@@ -154,6 +160,7 @@
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -184,7 +191,7 @@
     <a href=".." title="kuma DATA" class="md-nav__button md-logo" aria-label="kuma DATA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     kuma DATA
@@ -202,9 +209,16 @@
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Welcome to MkDocs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -231,9 +245,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
-    統計検定 DS発展　勉強メモ
+    
+  
+    統計検定 DS発展 勉強メモ
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -242,9 +263,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
-    統計検定 DS発展　勉強メモ
+    
+  
+    統計検定 DS発展 勉強メモ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -267,7 +295,9 @@
         <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
-      社会におけるデータ・AI利活用
+      
+        社会におけるデータ・AI利活用
+      
     </span>
   </a>
   
@@ -277,7 +307,9 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      社会で起きている変化
+      
+        社会で起きている変化
+      
     </span>
   </a>
   
@@ -286,7 +318,9 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      社会で活用されているデータ
+      
+        社会で活用されているデータ
+      
     </span>
   </a>
   
@@ -295,7 +329,9 @@
           <li class="md-nav__item">
   <a href="#ai_1" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AIの活用領域
+      
+        データ・AIの活用領域
+      
     </span>
   </a>
   
@@ -304,7 +340,9 @@
           <li class="md-nav__item">
   <a href="#ai_2" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI利活用のための技術
+      
+        データ・AI利活用のための技術
+      
     </span>
   </a>
   
@@ -313,7 +351,9 @@
           <li class="md-nav__item">
   <a href="#ai_3" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI利活用の現場
+      
+        データ・AI利活用の現場
+      
     </span>
   </a>
   
@@ -322,7 +362,9 @@
           <li class="md-nav__item">
   <a href="#ai_4" class="md-nav__link">
     <span class="md-ellipsis">
-      データAI利活用の最新動向
+      
+        データAI利活用の最新動向
+      
     </span>
   </a>
   
@@ -336,7 +378,9 @@
         <li class="md-nav__item">
   <a href="#ai_5" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI 利活用における留意事項
+      
+        データ・AI 利活用における留意事項
+      
     </span>
   </a>
   
@@ -345,7 +389,9 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      データリテラシー
+      
+        データリテラシー
+      
     </span>
   </a>
   
@@ -354,7 +400,9 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      数理基礎
+      
+        数理基礎
+      
     </span>
   </a>
   
@@ -364,7 +412,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      線形代数
+      
+        線形代数
+      
     </span>
   </a>
   
@@ -373,7 +423,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      微分積分
+      
+        微分積分
+      
     </span>
   </a>
   
@@ -382,7 +434,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      数列
+      
+        数列
+      
     </span>
   </a>
   
@@ -396,7 +450,9 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      デジタル情報とコンピュータの仕組み
+      
+        デジタル情報とコンピュータの仕組み
+      
     </span>
   </a>
   
@@ -406,7 +462,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      デジタル情報
+      
+        デジタル情報
+      
     </span>
   </a>
   
@@ -415,7 +473,9 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      コンピュータの仕組み
+      
+        コンピュータの仕組み
+      
     </span>
   </a>
   
@@ -429,7 +489,9 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズム基礎
+      
+        アルゴリズム基礎
+      
     </span>
   </a>
   
@@ -439,7 +501,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズムの表現
+      
+        アルゴリズムの表現
+      
     </span>
   </a>
   
@@ -448,7 +512,9 @@
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズムの構造
+      
+        アルゴリズムの構造
+      
     </span>
   </a>
   
@@ -457,7 +523,9 @@
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      基本的なアルゴリズムの例
+      
+        基本的なアルゴリズムの例
+      
     </span>
   </a>
   
@@ -471,7 +539,9 @@
         <li class="md-nav__item">
   <a href="#python" class="md-nav__link">
     <span class="md-ellipsis">
-      データ構造とプログラミング基礎（主にPython）
+      
+        データ構造とプログラミング基礎（主にPython）
+      
     </span>
   </a>
   
@@ -481,7 +551,9 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      データ構造
+      
+        データ構造
+      
     </span>
   </a>
   
@@ -490,7 +562,9 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      プログラミング基礎
+      
+        プログラミング基礎
+      
     </span>
   </a>
   
@@ -504,7 +578,9 @@
         <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      データハンドリング
+      
+        データハンドリング
+      
     </span>
   </a>
   
@@ -514,7 +590,9 @@
           <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      代表的なデータ形式
+      
+        代表的なデータ形式
+      
     </span>
   </a>
   
@@ -523,7 +601,9 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      その他のデータ形式
+      
+        その他のデータ形式
+      
     </span>
   </a>
   
@@ -532,7 +612,9 @@
           <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      データベース
+      
+        データベース
+      
     </span>
   </a>
   
@@ -541,7 +623,9 @@
           <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      データクレンジング
+      
+        データクレンジング
+      
     </span>
   </a>
   
@@ -550,7 +634,9 @@
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      データ加工
+      
+        データ加工
+      
     </span>
   </a>
   
@@ -564,7 +650,9 @@
         <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      データ取得とオープンデータ
+      
+        データ取得とオープンデータ
+      
     </span>
   </a>
   
@@ -574,7 +662,9 @@
           <li class="md-nav__item">
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      日本や世界のオープンデータ
+      
+        日本や世界のオープンデータ
+      
     </span>
   </a>
   
@@ -583,7 +673,9 @@
           <li class="md-nav__item">
   <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
-      オープンデータの取得
+      
+        オープンデータの取得
+      
     </span>
   </a>
   
@@ -592,7 +684,9 @@
           <li class="md-nav__item">
   <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
-      統計法
+      
+        統計法
+      
     </span>
   </a>
   
@@ -606,7 +700,9 @@
         <li class="md-nav__item">
   <a href="#_27" class="md-nav__link">
     <span class="md-ellipsis">
-      確立と確率分布
+      
+        確立と確率分布
+      
     </span>
   </a>
   
@@ -616,7 +712,9 @@
           <li class="md-nav__item">
   <a href="#_28" class="md-nav__link">
     <span class="md-ellipsis">
-      順列と組み合わせ
+      
+        順列と組み合わせ
+      
     </span>
   </a>
   
@@ -625,7 +723,9 @@
           <li class="md-nav__item">
   <a href="#_29" class="md-nav__link">
     <span class="md-ellipsis">
-      確率分布の概念
+      
+        確率分布の概念
+      
     </span>
   </a>
   
@@ -634,7 +734,9 @@
           <li class="md-nav__item">
   <a href="#_30" class="md-nav__link">
     <span class="md-ellipsis">
-      主要な確率分布
+      
+        主要な確率分布
+      
     </span>
   </a>
   
@@ -648,7 +750,9 @@
         <li class="md-nav__item">
   <a href="#_31" class="md-nav__link">
     <span class="md-ellipsis">
-      統計的推測
+      
+        統計的推測
+      
     </span>
   </a>
   
@@ -658,7 +762,9 @@
           <li class="md-nav__item">
   <a href="#_32" class="md-nav__link">
     <span class="md-ellipsis">
-      統計的モデル
+      
+        統計的モデル
+      
     </span>
   </a>
   
@@ -667,7 +773,9 @@
           <li class="md-nav__item">
   <a href="#_33" class="md-nav__link">
     <span class="md-ellipsis">
-      標本分布
+      
+        標本分布
+      
     </span>
   </a>
   
@@ -676,7 +784,9 @@
           <li class="md-nav__item">
   <a href="#_34" class="md-nav__link">
     <span class="md-ellipsis">
-      点推定
+      
+        点推定
+      
     </span>
   </a>
   
@@ -685,7 +795,9 @@
           <li class="md-nav__item">
   <a href="#_35" class="md-nav__link">
     <span class="md-ellipsis">
-      仮説検定の考え方
+      
+        仮説検定の考え方
+      
     </span>
   </a>
   
@@ -699,7 +811,9 @@
         <li class="md-nav__item">
   <a href="#_36" class="md-nav__link">
     <span class="md-ellipsis">
-      種々のデータ解析
+      
+        種々のデータ解析
+      
     </span>
   </a>
   
@@ -709,7 +823,9 @@
           <li class="md-nav__item">
   <a href="#_37" class="md-nav__link">
     <span class="md-ellipsis">
-      時系列データ解析
+      
+        時系列データ解析
+      
     </span>
   </a>
   
@@ -718,7 +834,9 @@
           <li class="md-nav__item">
   <a href="#_38" class="md-nav__link">
     <span class="md-ellipsis">
-      テキスト解析
+      
+        テキスト解析
+      
     </span>
   </a>
   
@@ -727,7 +845,9 @@
           <li class="md-nav__item">
   <a href="#_39" class="md-nav__link">
     <span class="md-ellipsis">
-      画像解析
+      
+        画像解析
+      
     </span>
   </a>
   
@@ -741,7 +861,9 @@
         <li class="md-nav__item">
   <a href="#_40" class="md-nav__link">
     <span class="md-ellipsis">
-      データ活用実践
+      
+        データ活用実践
+      
     </span>
   </a>
   
@@ -751,7 +873,9 @@
           <li class="md-nav__item">
   <a href="#_41" class="md-nav__link">
     <span class="md-ellipsis">
-      教師あり学習
+      
+        教師あり学習
+      
     </span>
   </a>
   
@@ -760,7 +884,9 @@
           <li class="md-nav__item">
   <a href="#_42" class="md-nav__link">
     <span class="md-ellipsis">
-      教師なし学習
+      
+        教師なし学習
+      
     </span>
   </a>
   
@@ -775,6 +901,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../statistics_l2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    統計検定2級 学習用まとめ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -808,7 +961,9 @@
         <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
-      社会におけるデータ・AI利活用
+      
+        社会におけるデータ・AI利活用
+      
     </span>
   </a>
   
@@ -818,7 +973,9 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      社会で起きている変化
+      
+        社会で起きている変化
+      
     </span>
   </a>
   
@@ -827,7 +984,9 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      社会で活用されているデータ
+      
+        社会で活用されているデータ
+      
     </span>
   </a>
   
@@ -836,7 +995,9 @@
           <li class="md-nav__item">
   <a href="#ai_1" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AIの活用領域
+      
+        データ・AIの活用領域
+      
     </span>
   </a>
   
@@ -845,7 +1006,9 @@
           <li class="md-nav__item">
   <a href="#ai_2" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI利活用のための技術
+      
+        データ・AI利活用のための技術
+      
     </span>
   </a>
   
@@ -854,7 +1017,9 @@
           <li class="md-nav__item">
   <a href="#ai_3" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI利活用の現場
+      
+        データ・AI利活用の現場
+      
     </span>
   </a>
   
@@ -863,7 +1028,9 @@
           <li class="md-nav__item">
   <a href="#ai_4" class="md-nav__link">
     <span class="md-ellipsis">
-      データAI利活用の最新動向
+      
+        データAI利活用の最新動向
+      
     </span>
   </a>
   
@@ -877,7 +1044,9 @@
         <li class="md-nav__item">
   <a href="#ai_5" class="md-nav__link">
     <span class="md-ellipsis">
-      データ・AI 利活用における留意事項
+      
+        データ・AI 利活用における留意事項
+      
     </span>
   </a>
   
@@ -886,7 +1055,9 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      データリテラシー
+      
+        データリテラシー
+      
     </span>
   </a>
   
@@ -895,7 +1066,9 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      数理基礎
+      
+        数理基礎
+      
     </span>
   </a>
   
@@ -905,7 +1078,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      線形代数
+      
+        線形代数
+      
     </span>
   </a>
   
@@ -914,7 +1089,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      微分積分
+      
+        微分積分
+      
     </span>
   </a>
   
@@ -923,7 +1100,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      数列
+      
+        数列
+      
     </span>
   </a>
   
@@ -937,7 +1116,9 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      デジタル情報とコンピュータの仕組み
+      
+        デジタル情報とコンピュータの仕組み
+      
     </span>
   </a>
   
@@ -947,7 +1128,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      デジタル情報
+      
+        デジタル情報
+      
     </span>
   </a>
   
@@ -956,7 +1139,9 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      コンピュータの仕組み
+      
+        コンピュータの仕組み
+      
     </span>
   </a>
   
@@ -970,7 +1155,9 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズム基礎
+      
+        アルゴリズム基礎
+      
     </span>
   </a>
   
@@ -980,7 +1167,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズムの表現
+      
+        アルゴリズムの表現
+      
     </span>
   </a>
   
@@ -989,7 +1178,9 @@
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      アルゴリズムの構造
+      
+        アルゴリズムの構造
+      
     </span>
   </a>
   
@@ -998,7 +1189,9 @@
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      基本的なアルゴリズムの例
+      
+        基本的なアルゴリズムの例
+      
     </span>
   </a>
   
@@ -1012,7 +1205,9 @@
         <li class="md-nav__item">
   <a href="#python" class="md-nav__link">
     <span class="md-ellipsis">
-      データ構造とプログラミング基礎（主にPython）
+      
+        データ構造とプログラミング基礎（主にPython）
+      
     </span>
   </a>
   
@@ -1022,7 +1217,9 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      データ構造
+      
+        データ構造
+      
     </span>
   </a>
   
@@ -1031,7 +1228,9 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      プログラミング基礎
+      
+        プログラミング基礎
+      
     </span>
   </a>
   
@@ -1045,7 +1244,9 @@
         <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      データハンドリング
+      
+        データハンドリング
+      
     </span>
   </a>
   
@@ -1055,7 +1256,9 @@
           <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      代表的なデータ形式
+      
+        代表的なデータ形式
+      
     </span>
   </a>
   
@@ -1064,7 +1267,9 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      その他のデータ形式
+      
+        その他のデータ形式
+      
     </span>
   </a>
   
@@ -1073,7 +1278,9 @@
           <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      データベース
+      
+        データベース
+      
     </span>
   </a>
   
@@ -1082,7 +1289,9 @@
           <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      データクレンジング
+      
+        データクレンジング
+      
     </span>
   </a>
   
@@ -1091,7 +1300,9 @@
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      データ加工
+      
+        データ加工
+      
     </span>
   </a>
   
@@ -1105,7 +1316,9 @@
         <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      データ取得とオープンデータ
+      
+        データ取得とオープンデータ
+      
     </span>
   </a>
   
@@ -1115,7 +1328,9 @@
           <li class="md-nav__item">
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      日本や世界のオープンデータ
+      
+        日本や世界のオープンデータ
+      
     </span>
   </a>
   
@@ -1124,7 +1339,9 @@
           <li class="md-nav__item">
   <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
-      オープンデータの取得
+      
+        オープンデータの取得
+      
     </span>
   </a>
   
@@ -1133,7 +1350,9 @@
           <li class="md-nav__item">
   <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
-      統計法
+      
+        統計法
+      
     </span>
   </a>
   
@@ -1147,7 +1366,9 @@
         <li class="md-nav__item">
   <a href="#_27" class="md-nav__link">
     <span class="md-ellipsis">
-      確立と確率分布
+      
+        確立と確率分布
+      
     </span>
   </a>
   
@@ -1157,7 +1378,9 @@
           <li class="md-nav__item">
   <a href="#_28" class="md-nav__link">
     <span class="md-ellipsis">
-      順列と組み合わせ
+      
+        順列と組み合わせ
+      
     </span>
   </a>
   
@@ -1166,7 +1389,9 @@
           <li class="md-nav__item">
   <a href="#_29" class="md-nav__link">
     <span class="md-ellipsis">
-      確率分布の概念
+      
+        確率分布の概念
+      
     </span>
   </a>
   
@@ -1175,7 +1400,9 @@
           <li class="md-nav__item">
   <a href="#_30" class="md-nav__link">
     <span class="md-ellipsis">
-      主要な確率分布
+      
+        主要な確率分布
+      
     </span>
   </a>
   
@@ -1189,7 +1416,9 @@
         <li class="md-nav__item">
   <a href="#_31" class="md-nav__link">
     <span class="md-ellipsis">
-      統計的推測
+      
+        統計的推測
+      
     </span>
   </a>
   
@@ -1199,7 +1428,9 @@
           <li class="md-nav__item">
   <a href="#_32" class="md-nav__link">
     <span class="md-ellipsis">
-      統計的モデル
+      
+        統計的モデル
+      
     </span>
   </a>
   
@@ -1208,7 +1439,9 @@
           <li class="md-nav__item">
   <a href="#_33" class="md-nav__link">
     <span class="md-ellipsis">
-      標本分布
+      
+        標本分布
+      
     </span>
   </a>
   
@@ -1217,7 +1450,9 @@
           <li class="md-nav__item">
   <a href="#_34" class="md-nav__link">
     <span class="md-ellipsis">
-      点推定
+      
+        点推定
+      
     </span>
   </a>
   
@@ -1226,7 +1461,9 @@
           <li class="md-nav__item">
   <a href="#_35" class="md-nav__link">
     <span class="md-ellipsis">
-      仮説検定の考え方
+      
+        仮説検定の考え方
+      
     </span>
   </a>
   
@@ -1240,7 +1477,9 @@
         <li class="md-nav__item">
   <a href="#_36" class="md-nav__link">
     <span class="md-ellipsis">
-      種々のデータ解析
+      
+        種々のデータ解析
+      
     </span>
   </a>
   
@@ -1250,7 +1489,9 @@
           <li class="md-nav__item">
   <a href="#_37" class="md-nav__link">
     <span class="md-ellipsis">
-      時系列データ解析
+      
+        時系列データ解析
+      
     </span>
   </a>
   
@@ -1259,7 +1500,9 @@
           <li class="md-nav__item">
   <a href="#_38" class="md-nav__link">
     <span class="md-ellipsis">
-      テキスト解析
+      
+        テキスト解析
+      
     </span>
   </a>
   
@@ -1268,7 +1511,9 @@
           <li class="md-nav__item">
   <a href="#_39" class="md-nav__link">
     <span class="md-ellipsis">
-      画像解析
+      
+        画像解析
+      
     </span>
   </a>
   
@@ -1282,7 +1527,9 @@
         <li class="md-nav__item">
   <a href="#_40" class="md-nav__link">
     <span class="md-ellipsis">
-      データ活用実践
+      
+        データ活用実践
+      
     </span>
   </a>
   
@@ -1292,7 +1539,9 @@
           <li class="md-nav__item">
   <a href="#_41" class="md-nav__link">
     <span class="md-ellipsis">
-      教師あり学習
+      
+        教師あり学習
+      
     </span>
   </a>
   
@@ -1301,7 +1550,9 @@
           <li class="md-nav__item">
   <a href="#_42" class="md-nav__link">
     <span class="md-ellipsis">
-      教師なし学習
+      
+        教師なし学習
+      
     </span>
   </a>
   
@@ -1322,9 +1573,11 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
+
 
 
 <h1 id="ds">統計検定 DS発展　勉強メモ</h1>
@@ -1809,8 +2062,8 @@ $$</li>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
 <span class="normal"><a href="#__codelineno-0-16">16</a></span>
 <span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
@@ -1848,8 +2101,8 @@ $$</li>
 <span class="normal"><a href="#__codelineno-1-15">15</a></span>
 <span class="normal"><a href="#__codelineno-1-16">16</a></span>
 <span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
@@ -1895,8 +2148,8 @@ $$
 ①<span class="arithmatex">\(log_{a}MN = log_{a}M + log_{a}N\)</span><br />
 ②<span class="arithmatex">\(log \frac{M}{N} = log_a{M} - log_a{N}\)</span><br />
 ③<span class="arithmatex">\(log_{a}{M}^p = {p}log_{a}{M}\)</span></p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">math</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span> <span class="c1">#numpyの場合</span>
@@ -2269,10 +2522,13 @@ ccccccccccccccccccccc
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       
