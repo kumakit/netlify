@@ -4,4 +4,4 @@
 
 各パラメータを操作し、各種確率分布の形状（PDF/PMF）の変化を直感的に確認できるシミュレーターです。
 
-<iframe src="https://<your-streamlit-app-url>/?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+<iframe src="https://kumatiki.f5.si/?embed=true" width="100%" height="800px" frameborder="0"></iframe>
