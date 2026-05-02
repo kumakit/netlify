@@ -1,22 +1,23 @@
-# Welcome to MkDocs
+# kuma DATA 🐻📊
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+ここは、データサイエンス・統計学の学習記録や、作成したダッシュボード・アプリをまとめたパーソナル・ナレッジベースです。
 
-統計検定　データサイエンス発展
+---
 
-[Streamlit page](https://kumadata.streamlit.app)  
-[Github Pages](https://kumakit.github.io)
+## 📚 学習コンテンツ
 
-## Commands
+### 📈 統計検定関連
+* [**統計検定2級 学習用まとめ**](statistics_l2/index.md)
+  * 統計検定2級の取得に向けた学習メモや要点整理です。
+* [**統計検定 DS発展 勉強メモ**](ds_dev/index.md)
+  * データサイエンス発展（DS発展）に関する学習記録です。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## 🛠️ アプリケーション・ポートフォリオ
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### 🚀 外部公開アプリ & サイト
+* [**Streamlit page**](https://kumadata.streamlit.app)
+  * Python/Streamlitを用いて作成したデータ分析ダッシュボードやWebアプリを公開しています。
+* [**Github Pages**](https://kumakit.github.io)
+  * その他のプロジェクトや静的コンテンツの公開ページです。
