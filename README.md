@@ -1,4 +1,4 @@
-# kuma DATA (MkDocs Site)
+# bearworks (MkDocs Site)
 
 このリポジトリは、学習まとめサイト（MkDocs）のソースコードを管理しています。
 `main` ブランチにプッシュすると、Netlifyの自動ビルドによりサイトが公開されます。

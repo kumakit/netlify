@@ -1,4 +1,4 @@
-site_name: kuma DATA
+site_name: bearworks
 
 nav:
     - 'index.md'
@@ -9,14 +9,19 @@ theme:
   name: material
   language: 'ja'
   font: 
-    text: IBM+Plex+Sans+JP
+    text: Noto Sans JP
+    code: Fira Code
   palette:
-    scheme: slate
-    primary: black
-    accent: light green
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: grey
   extra:
     search:
       language: 'jp'
+
+extra:
+  homepage: https://bearworks.uk/
 
 markdown_extensions:
   - pymdownx.tasklist:
@@ -42,4 +47,5 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra_css:
+  - stylesheets/custom.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
