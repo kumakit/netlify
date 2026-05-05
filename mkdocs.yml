@@ -1,21 +1,29 @@
-site_name: bearworks
+site_name: Data Science Docs
 
 nav:
-    - 'index.md'
+    - 'Hub': 'https://bearworks.uk'
+    - 'Home': 'index.md'
     - 'ds_dev.md'
     - 'statistics_l2.md'
 
 theme:
   name: material
+  custom_dir: overrides
+  icon:
+    logo: material/database
   language: 'ja'
   font: 
-    text: Noto Sans JP
+    text: Inter
     code: Fira Code
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: grey
+      accent: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
   extra:
     search:
       language: 'jp'
@@ -49,3 +57,4 @@ extra_javascript:
 extra_css:
   - stylesheets/custom.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - stylesheets/extra.css

@@ -1,0 +1,108 @@
+:root {
+  /* Colors from bearworks.uk */
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+  --md-accent-fg-color: #3B82F6;
+  
+  --background: #F9FAFB;
+  --foreground: #111827;
+  --accent-blue: #3B82F6;
+  --accent-green: #10B981;
+  --accent-pink: #EC4899;
+  --accent-yellow: #F59E0B;
+  --accent-purple: #8B5CF6;
+  --accent-cyan: #22d3ee;
+  --muted: #6B7280;
+}
+
+/* Base style overrides */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--background);
+  --md-default-fg-color: var(--foreground);
+  --md-footer-bg-color: #ffffff;
+  --md-footer-fg-color: var(--muted);
+}
+
+/* Rounded corners and shadow for main content */
+.md-content__inner {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+/* Header style - make it more pill-like */
+.md-header {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  color: var(--foreground) !important;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.md-header__button {
+  color: var(--foreground) !important;
+}
+
+.md-header__topic {
+  font-weight: 700 !important;
+  color: var(--foreground) !important;
+}
+
+/* Icon with Blob effect */
+.icon-with-blob {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 0.25rem;
+  vertical-align: middle;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.icon-with-blob svg {
+  position: relative;
+  z-index: 10;
+  width: 1em;
+  height: 1em;
+}
+
+.blob {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  filter: blur(8px);
+  opacity: 0.4;
+  transform: scale(1.5);
+}
+
+.blob-sm {
+  filter: blur(4px);
+  transform: scale(0.8);
+}
+
+.blob-blue { background-color: #60a5fa; }
+.blob-green { background-color: #4ade80; }
+.blob-purple { background-color: #a78bfa; }
+.blob-pink { background-color: #f472b6; }
+.blob-yellow { background-color: #facc15; }
+.blob-cyan { background-color: #22d3ee; }
+
+/* Wave Animation */
+.animate-wave {
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
+}
